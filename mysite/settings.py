@@ -75,11 +75,14 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'tendatabase',       # Đặt tên database bạn tạo trong PostgreSQL
+        'USER': 'tenuser',           # Username PostgreSQL
+        'PASSWORD': 'matkhau',       # Password PostgreSQL
+        'HOST': 'localhost',         # Nếu PostgreSQL chạy trên máy bạn
+        'PORT': '5432',              # Cổng mặc định của PostgreSQL
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
