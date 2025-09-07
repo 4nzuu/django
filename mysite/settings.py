@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-$$^)$g-4$89h!74u9gr8izd_kqj#wdd&wy^zv@&oj!0+^r)#n-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+import os
+
+ALLOWED_HOSTS = ["*"]  # Cho phép tất cả host tạm thời (để Railway không chặn)
 
 
 # Application definition
